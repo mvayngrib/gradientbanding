@@ -8,8 +8,8 @@
 
 import React, { Component } from 'react'
 import { Platform, StyleSheet, Text, View } from 'react-native'
-// import BgSVG from './BgSVG'
-import BgLG from './BgLG'
+import BgSVG from './BgSVG'
+// import BgLG from './BgLG'
 
 const instructions = Platform.select({
 	ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -20,7 +20,7 @@ type Props = {}
 
 export default class App extends Component<Props> {
 	render() {
-		return <BgLG />
+		return <BgSVG />
 	}
 }
 
