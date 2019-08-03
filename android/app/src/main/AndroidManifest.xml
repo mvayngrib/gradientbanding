@@ -10,7 +10,7 @@
       android:roundIcon="@mipmap/ic_launcher_round"
       android:allowBackup="false"
       android:theme="@style/AppTheme"
-      android:hardwareAccelerated="false">
+      android:colorMode="wideColorGamut">
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"

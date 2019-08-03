@@ -8,7 +8,7 @@
 
 import React, { Component } from 'react'
 import { Platform, StyleSheet, Text, View } from 'react-native'
-import BgSVG from './BgSVG'
+// import BgSVG from './BgSVG'
 import BgLG from './BgLG'
 
 const instructions = Platform.select({
@@ -17,28 +17,17 @@ const instructions = Platform.select({
 })
 
 type Props = {}
+
 export default class App extends Component<Props> {
 	render() {
-		return (
-			<View style={styles.container}>
-				<View style={{ flex: 1, borderColor: 'white' }}>
-					<BgSVG />
-				</View>
-				<View style={{ flex: 1, borderColor: 'white', borderLeftWidth: 2 }}>
-					<BgLG />
-				</View>
-			</View>
-		)
+		return <BgLG />
 	}
 }
 
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		// justifyContent: 'center',
-		// alignItems: 'center',
 		backgroundColor: '#F5FCFF',
-		flexDirection: 'row',
 	},
 	welcome: {
 		fontSize: 20,
